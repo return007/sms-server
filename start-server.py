@@ -48,11 +48,4 @@ def send_sms():
 
 	return jsonify(response=response)
 
-@app.route('/register', methods=['PUT'])
-def register_user():
-	print dir(rq)
-	print rq.form
-	print json.loads(rq.data)
-	return "Hello World"
-
 app.run(debug = True, host="0.0.0.0")
